@@ -391,6 +391,7 @@ function renderChart() {
           pointRadius: 0,
           pointHoverRadius: 4,
           tension: 0.4,
+          cubicInterpolationMode: 'monotone',
           fill: '+1',
           order: 2,
         },
@@ -403,6 +404,7 @@ function renderChart() {
           pointRadius: 0,
           fill: '+1',
           tension: 0.4,
+          cubicInterpolationMode: 'monotone',
           order: 5,
         },
         {
@@ -414,6 +416,7 @@ function renderChart() {
           borderDash: [2, 4],
           pointRadius: 0,
           tension: 0.4,
+          cubicInterpolationMode: 'monotone',
           order: 6,
         },
         {
