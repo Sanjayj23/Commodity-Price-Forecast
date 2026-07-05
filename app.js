@@ -220,6 +220,19 @@ function renderPriceBanner() {
   const grain = state.currentGrain;
   const gd    = state.predictions[grain];
   const color = GRAIN_COLORS[grain];
+  
+  // Find the absolute latest actual price available (including live highlight data)
+  let latestPrice = gd.current_price;
+  let latestDate = gd.last_data_date;
+  
+  if (state.actuals && state.actuals[grain] && state.actuals[grain].context) {
+    const actList = state.actuals[grain].context;
+    if (actList.length > 0) {
+      const lastRec = actList[actList.length - 1];
+      latestPrice = lastRec.price;
+      latestDate = lastRec.date;
+    }
+  }
 
   const banner = document.getElementById('price-banner');
   banner.style.setProperty('--grain-color', color);
@@ -228,12 +241,12 @@ function renderPriceBanner() {
   document.getElementById('banner-icon').textContent  = GRAIN_ICONS[grain] || gd.icon;
   document.getElementById('banner-grain-name').textContent = grain + ' — National Median Price';
   document.getElementById('banner-unit').textContent  = '/' + (gd.unit || 'Quintal').replace('Rs/', '');
-  document.getElementById('banner-last-date').textContent = formatDate(gd.last_data_date);
+  document.getElementById('banner-last-date').textContent = formatDate(latestDate);
   document.getElementById('banner-forecast-to').textContent = formatDate(gd.forecast_as_of || '2026-07-05');
 
   // Animate counter
   const priceEl = document.getElementById('banner-price');
-  animateCounter(priceEl, 0, gd.current_price, 800, '₹', '', true);
+  animateCounter(priceEl, 0, latestPrice, 800, '₹', '', true);
 }
 
 // ── Forecast Cards ─────────────────────────────────────────────────────────
