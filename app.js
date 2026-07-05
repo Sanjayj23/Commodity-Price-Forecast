@@ -648,6 +648,7 @@ function renderMetrics() {
   const gd     = state.predictions[grain];
   const color  = GRAIN_COLORS[grain];
   const container = document.getElementById('metrics-cards');
+  if (!container) return;
   container.innerHTML = '';
   container.style.setProperty('--grain-color', color);
 
