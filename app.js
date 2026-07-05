@@ -257,12 +257,20 @@ function renderForecastCards() {
   const container = document.getElementById('forecast-cards');
 
   container.innerHTML = '';
+  let latestPrice = gd.current_price;
+  if (state.actuals && state.actuals[grain] && state.actuals[grain].context) {
+    const actList = state.actuals[grain].context;
+    if (actList.length > 0) {
+      latestPrice = actList[actList.length - 1].price;
+    }
+  }
 
   [7, 30, 90].forEach((h, idx) => {
     const hd = gd.horizons[h] || gd.horizons[String(h)];
     if (!hd) return;
 
-    const isUp  = hd.change_pct >= 0;
+    const dynChangePct = ((hd.predicted_price - latestPrice) / latestPrice) * 100;
+    const isUp  = dynChangePct >= 0;
     const conf  = hd.confidence_level || 'Medium';
     const mape  = hd.metrics?.ensemble_mape || 0;
 
@@ -291,9 +299,9 @@ function renderForecastCards() {
       <div class="card-change">
         <div class="change-badge ${isUp ? 'up' : 'down'}">
           <span class="change-arrow">${isUp ? '↑' : '↓'}</span>
-          <span>${Math.abs(hd.change_pct).toFixed(1)}%</span>
+          <span>${Math.abs(dynChangePct).toFixed(1)}%</span>
         </div>
-        <span style="font-size:0.75rem; color:var(--text-muted)">vs current ₹${Math.round(gd.current_price).toLocaleString('en-IN')}</span>
+        <span style="font-size:0.75rem; color:var(--text-muted)">vs current ₹${Math.round(latestPrice).toLocaleString('en-IN')}</span>
       </div>
       <div class="confidence-band">
         <div class="band-label">90% Confidence Interval</div>
