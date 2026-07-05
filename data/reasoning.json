@@ -1,0 +1,1074 @@
+{
+  "Wheat": {
+    "6": {
+      "text": "Wheat prices are forecast to fall by 100.0% from Rs.2,406 to Rs.1/quintal over the next three months (model accuracy: 1.5% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Seasonal dynamics show the market transitioning toward the next harvest window, with supply availability remaining adequate and pricing reflecting the typical inter-seasonal softness. With prices near or below the MSP of Rs.2,600/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **price premium/discount vs. government MSP**, and **30-day price volatility** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.175/quintal (+7.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 952.9678
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 462.6728
+        },
+        {
+          "feature": "30-day price volatility",
+          "score": 420.5521
+        },
+        {
+          "feature": "Vol Log Ret 14",
+          "score": 401.6311
+        },
+        {
+          "feature": "Vol Log Ret 7",
+          "score": 401.0961
+        },
+        {
+          "feature": "Roll Cv 14",
+          "score": 396.2128
+        },
+        {
+          "feature": "Roll Cv 7",
+          "score": 375.8488
+        },
+        {
+          "feature": "Market Count Lag1",
+          "score": 355.5852
+        }
+      ]
+    },
+    "7": {
+      "text": "Wheat prices are forecast to fall by 100.0% from Rs.2,406 to Rs.1/quintal over the next week (model accuracy: 1.5% error), driven primarily by short-term momentum and recent market activity. Seasonal dynamics show the market transitioning toward the next harvest window, with supply availability remaining adequate and pricing reflecting the typical inter-seasonal softness. With prices near or below the MSP of Rs.2,600/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **Vol Log Ret 7**, and **Roll Cv 14** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. Short-term price action (7-day) is primarily driven by day-to-day mandi arrivals, trader sentiment, and weather disruptions to transport - the 1.5% average forecast error reflects the inherent noise in daily market microstructure.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 1330.9638
+        },
+        {
+          "feature": "Vol Log Ret 7",
+          "score": 805.9527
+        },
+        {
+          "feature": "Roll Cv 14",
+          "score": 788.398
+        },
+        {
+          "feature": "Roll Cv 7",
+          "score": 739.4061
+        },
+        {
+          "feature": "Spread Wheat Maize",
+          "score": 715.8547
+        },
+        {
+          "feature": "30-day price volatility",
+          "score": 651.469
+        },
+        {
+          "feature": "Vol Log Ret 14",
+          "score": 642.4631
+        },
+        {
+          "feature": "Market Count Roll7",
+          "score": 630.1383
+        }
+      ]
+    },
+    "8": {
+      "text": "Wheat prices are forecast to fall by 100.0% from Rs.2,406 to Rs.1/quintal over the next three months (model accuracy: 1.5% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Seasonal dynamics show the market transitioning toward the next harvest window, with supply availability remaining adequate and pricing reflecting the typical inter-seasonal softness. With prices near or below the MSP of Rs.2,600/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **Roll Cv 14**, and **Vol Log Ret 7** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.175/quintal (+7.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 1851.7114
+        },
+        {
+          "feature": "Roll Cv 14",
+          "score": 808.3349
+        },
+        {
+          "feature": "Vol Log Ret 7",
+          "score": 797.4047
+        },
+        {
+          "feature": "Spread Wheat Maize",
+          "score": 780.8517
+        },
+        {
+          "feature": "Roll Cv 7",
+          "score": 765.6815
+        },
+        {
+          "feature": "Price Spread Roll7",
+          "score": 757.131
+        },
+        {
+          "feature": "Spread Wheat Paddy",
+          "score": 744.1674
+        },
+        {
+          "feature": "30-day price volatility",
+          "score": 722.9291
+        }
+      ]
+    },
+    "9": {
+      "text": "Wheat prices are forecast to fall by 100.0% from Rs.2,406 to Rs.1/quintal over the next three months (model accuracy: 1.5% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Seasonal dynamics show the market transitioning toward the next harvest window, with supply availability remaining adequate and pricing reflecting the typical inter-seasonal softness. With prices near or below the MSP of Rs.2,600/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **price premium/discount vs. government MSP**, and **Spread Wheat Maize** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.175/quintal (+7.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 1248.0724
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 812.1936
+        },
+        {
+          "feature": "Spread Wheat Maize",
+          "score": 641.5725
+        },
+        {
+          "feature": "Price Spread Roll7",
+          "score": 632.1015
+        },
+        {
+          "feature": "seasonal/cyclical price pattern",
+          "score": 563.3491
+        },
+        {
+          "feature": "short-term supply arrival trend",
+          "score": 550.0195
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 520.4215
+        },
+        {
+          "feature": "Momentum 30 90",
+          "score": 492.492
+        }
+      ]
+    },
+    "10": {
+      "text": "Wheat prices are forecast to fall by 100.0% from Rs.2,406 to Rs.1/quintal over the next three months (model accuracy: 1.4% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Seasonal dynamics show the market transitioning toward the next harvest window, with supply availability remaining adequate and pricing reflecting the typical inter-seasonal softness. With prices near or below the MSP of Rs.2,600/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **seasonal/cyclical price pattern**, and **Spread Wheat Maize** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.175/quintal (+7.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 1248.0863
+        },
+        {
+          "feature": "seasonal/cyclical price pattern",
+          "score": 600.4617
+        },
+        {
+          "feature": "Spread Wheat Maize",
+          "score": 539.8161
+        },
+        {
+          "feature": "seasonal/cyclical price pattern",
+          "score": 533.8221
+        },
+        {
+          "feature": "Momentum 30 90",
+          "score": 512.9384
+        },
+        {
+          "feature": "Price Spread Roll7",
+          "score": 492.2164
+        },
+        {
+          "feature": "medium-term supply arrival trend",
+          "score": 471.4136
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 432.9021
+        }
+      ]
+    },
+    "30": {
+      "text": "Wheat prices are forecast to fall by 100.0% from Rs.2,406 to Rs.1/quintal over the next month (model accuracy: 1.7% error), driven primarily by medium-term supply-demand balance and seasonal patterns. Seasonal dynamics show the market transitioning toward the next harvest window, with supply availability remaining adequate and pricing reflecting the typical inter-seasonal softness. With prices near or below the MSP of Rs.2,600/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **long-term annual price trend**, and **Market Count Roll7** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 30-day outlook is shaped by the pre-kharif procurement cycle and government release of buffer stocks - both factors have been incorporated in the LightGBM model's feature set.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 248.2555
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 180.2205
+        },
+        {
+          "feature": "Market Count Roll7",
+          "score": 90.4015
+        },
+        {
+          "feature": "Vol Log Ret 90",
+          "score": 89.7017
+        },
+        {
+          "feature": "Spread Wheat Paddy",
+          "score": 87.0512
+        },
+        {
+          "feature": "Spread Wheat Maize",
+          "score": 82.9152
+        },
+        {
+          "feature": "Vol Log Ret 14",
+          "score": 78.2703
+        },
+        {
+          "feature": "Price Spread Roll7",
+          "score": 76.5386
+        }
+      ]
+    },
+    "90": {
+      "text": "Wheat prices are forecast to fall by 100.0% from Rs.2,406 to Rs.1/quintal over the next three months (model accuracy: 1.6% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Seasonal dynamics show the market transitioning toward the next harvest window, with supply availability remaining adequate and pricing reflecting the typical inter-seasonal softness. With prices near or below the MSP of Rs.2,600/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **long-term annual price trend**, and **Spread Wheat Maize** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.175/quintal (+7.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 2742.1356
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 1474.0086
+        },
+        {
+          "feature": "Spread Wheat Maize",
+          "score": 1239.5396
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 1215.14
+        },
+        {
+          "feature": "Vol Log Ret 90",
+          "score": 1112.1883
+        },
+        {
+          "feature": "Spread Wheat Paddy",
+          "score": 973.9017
+        },
+        {
+          "feature": "Price Spread Roll7",
+          "score": 941.7111
+        },
+        {
+          "feature": "Market Count Lag1",
+          "score": 938.1715
+        }
+      ]
+    }
+  },
+  "Paddy": {
+    "6": {
+      "text": "Paddy prices are forecast to fall by 100.0% from Rs.2,371 to Rs.1/quintal over the next three months (model accuracy: 1.4% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Currently in the paddy sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,550/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **Market Count Lag1**, and **Log Ret Lag 7** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.125/quintal (+5.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 1274.0276
+        },
+        {
+          "feature": "Market Count Lag1",
+          "score": 741.1982
+        },
+        {
+          "feature": "Log Ret Lag 7",
+          "score": 561.7509
+        },
+        {
+          "feature": "Roll Cv 7",
+          "score": 509.6261
+        },
+        {
+          "feature": "Vol Log Ret 7",
+          "score": 508.8072
+        },
+        {
+          "feature": "Roll Cv 14",
+          "score": 501.1495
+        },
+        {
+          "feature": "Arr Lag 90",
+          "score": 468.0677
+        },
+        {
+          "feature": "Log Ret Lag 14",
+          "score": 444.3633
+        }
+      ]
+    },
+    "7": {
+      "text": "Paddy prices are forecast to fall by 100.0% from Rs.2,371 to Rs.1/quintal over the next week (model accuracy: 1.4% error), driven primarily by short-term momentum and recent market activity. Currently in the paddy sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,550/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **price premium/discount vs. government MSP**, and **Day Of Year** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. Short-term price action (7-day) is primarily driven by day-to-day mandi arrivals, trader sentiment, and weather disruptions to transport - the 1.4% average forecast error reflects the inherent noise in daily market microstructure.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 134.6293
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 120.9154
+        },
+        {
+          "feature": "Day Of Year",
+          "score": 80.4462
+        },
+        {
+          "feature": "seasonal/cyclical price pattern",
+          "score": 61.6116
+        },
+        {
+          "feature": "Price Spread Roll7",
+          "score": 55.8505
+        },
+        {
+          "feature": "Momentum 30 90",
+          "score": 55.3721
+        },
+        {
+          "feature": "current price vs. annual average",
+          "score": 48.3237
+        },
+        {
+          "feature": "Vol Log Ret 60",
+          "score": 48.32
+        }
+      ]
+    },
+    "8": {
+      "text": "Paddy prices are forecast to fall by 100.0% from Rs.2,371 to Rs.1/quintal over the next three months (model accuracy: 1.6% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Currently in the paddy sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,550/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **Arr Lag 90**, and **seasonal/cyclical price pattern** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.125/quintal (+5.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 166.4942
+        },
+        {
+          "feature": "Arr Lag 90",
+          "score": 75.2547
+        },
+        {
+          "feature": "seasonal/cyclical price pattern",
+          "score": 64.1437
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 54.9887
+        },
+        {
+          "feature": "Day Of Week",
+          "score": 51.3639
+        },
+        {
+          "feature": "Day Of Year",
+          "score": 50.6068
+        },
+        {
+          "feature": "Market Count Lag1",
+          "score": 50.3446
+        },
+        {
+          "feature": "Market Count Roll7",
+          "score": 45.6248
+        }
+      ]
+    },
+    "9": {
+      "text": "Paddy prices are forecast to fall by 100.0% from Rs.2,371 to Rs.1/quintal over the next three months (model accuracy: 1.3% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Currently in the paddy sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,550/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **price premium/discount vs. government MSP**, and **Market Count Roll7** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.125/quintal (+5.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 5047.3765
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 2644.8698
+        },
+        {
+          "feature": "Market Count Roll7",
+          "score": 2355.4423
+        },
+        {
+          "feature": "Day Of Week",
+          "score": 1894.6637
+        },
+        {
+          "feature": "Vol Log Ret 7",
+          "score": 1775.7519
+        },
+        {
+          "feature": "Market Count Lag1",
+          "score": 1759.6399
+        },
+        {
+          "feature": "Roll Cv 14",
+          "score": 1728.787
+        },
+        {
+          "feature": "Roll Cv 7",
+          "score": 1697.2486
+        }
+      ]
+    },
+    "10": {
+      "text": "Paddy prices are forecast to fall by 100.0% from Rs.2,371 to Rs.1/quintal over the next three months (model accuracy: 1.4% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Currently in the paddy sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,550/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **Arr Lag 60**, and **Day Of Year** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.125/quintal (+5.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 827.8237
+        },
+        {
+          "feature": "Arr Lag 60",
+          "score": 489.2424
+        },
+        {
+          "feature": "Day Of Year",
+          "score": 437.749
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 411.0579
+        },
+        {
+          "feature": "Log Ret Lag 30",
+          "score": 386.2112
+        },
+        {
+          "feature": "Spread Paddy Wheat",
+          "score": 357.4873
+        },
+        {
+          "feature": "Price Spread Roll7",
+          "score": 356.8629
+        },
+        {
+          "feature": "Day Of Week",
+          "score": 336.4426
+        }
+      ]
+    },
+    "30": {
+      "text": "Paddy prices are forecast to fall by 100.0% from Rs.2,371 to Rs.1/quintal over the next month (model accuracy: 1.4% error), driven primarily by medium-term supply-demand balance and seasonal patterns. Currently in the paddy sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,550/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **seasonal/cyclical price pattern**, and **Price Spread Roll7** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 30-day outlook is shaped by the pre-kharif procurement cycle and government release of buffer stocks - both factors have been incorporated in the LightGBM model's feature set.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 4479.93
+        },
+        {
+          "feature": "seasonal/cyclical price pattern",
+          "score": 2080.0415
+        },
+        {
+          "feature": "Price Spread Roll7",
+          "score": 1758.4782
+        },
+        {
+          "feature": "Day Of Week",
+          "score": 1675.099
+        },
+        {
+          "feature": "Arr Lag 90",
+          "score": 1442.8367
+        },
+        {
+          "feature": "Spread Paddy Wheat",
+          "score": 1313.7513
+        },
+        {
+          "feature": "Day Of Year",
+          "score": 1266.6904
+        },
+        {
+          "feature": "Spread Paddy Maize",
+          "score": 1153.473
+        }
+      ]
+    },
+    "90": {
+      "text": "Paddy prices are forecast to fall by 100.0% from Rs.2,371 to Rs.1/quintal over the next three months (model accuracy: 1.4% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Currently in the paddy sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,550/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **Market Count Lag1**, **price-to-MSP ratio (floor support)**, and **Market Count Roll7** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.125/quintal (+5.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "Market Count Lag1",
+          "score": 588.8016
+        },
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 538.4274
+        },
+        {
+          "feature": "Market Count Roll7",
+          "score": 469.0931
+        },
+        {
+          "feature": "Arr Lag 90",
+          "score": 345.87
+        },
+        {
+          "feature": "Spread Paddy Maize",
+          "score": 339.1748
+        },
+        {
+          "feature": "yesterday's market arrivals (supply signal)",
+          "score": 281.7393
+        },
+        {
+          "feature": "Arr Lag 60",
+          "score": 275.8243
+        },
+        {
+          "feature": "Arr Lag 30",
+          "score": 270.8433
+        }
+      ]
+    }
+  },
+  "Maize": {
+    "6": {
+      "text": "Maize prices are forecast to fall by 100.0% from Rs.1,972 to Rs.1/quintal over the next three months (model accuracy: 1.9% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Currently in the maize sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,465/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **Market Count Lag1**, and **Log Ret Lag 7** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.115/quintal (+4.9%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 598.6336
+        },
+        {
+          "feature": "Market Count Lag1",
+          "score": 247.83
+        },
+        {
+          "feature": "Log Ret Lag 7",
+          "score": 247.706
+        },
+        {
+          "feature": "Vol Log Ret 7",
+          "score": 233.2509
+        },
+        {
+          "feature": "Log Ret Lag 14",
+          "score": 223.3358
+        },
+        {
+          "feature": "Roll Cv 14",
+          "score": 222.453
+        },
+        {
+          "feature": "short-term price trend (7-day momentum)",
+          "score": 211.1976
+        },
+        {
+          "feature": "Log Ret Lag 1",
+          "score": 206.644
+        }
+      ]
+    },
+    "7": {
+      "text": "Maize prices are forecast to fall by 100.0% from Rs.1,972 to Rs.1/quintal over the next week (model accuracy: 1.8% error), driven primarily by short-term momentum and recent market activity. Currently in the maize sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,465/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **long-term annual price trend**, and **seasonal/cyclical price pattern** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. Short-term price action (7-day) is primarily driven by day-to-day mandi arrivals, trader sentiment, and weather disruptions to transport - the 1.8% average forecast error reflects the inherent noise in daily market microstructure.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 2940.0782
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 1477.3794
+        },
+        {
+          "feature": "seasonal/cyclical price pattern",
+          "score": 1373.0018
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 1155.1896
+        },
+        {
+          "feature": "medium-term supply arrival trend",
+          "score": 1125.0026
+        },
+        {
+          "feature": "Vol Log Ret 90",
+          "score": 1117.5312
+        },
+        {
+          "feature": "short-term supply arrival trend",
+          "score": 1114.5983
+        },
+        {
+          "feature": "Market Count Roll7",
+          "score": 1018.6424
+        }
+      ]
+    },
+    "8": {
+      "text": "Maize prices are forecast to fall by 100.0% from Rs.1,972 to Rs.1/quintal over the next three months (model accuracy: 1.9% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Currently in the maize sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,465/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **seasonal/cyclical price pattern**, and **long-term annual price trend** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.115/quintal (+4.9%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 2874.9208
+        },
+        {
+          "feature": "seasonal/cyclical price pattern",
+          "score": 1709.0303
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 1629.517
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 1471.6488
+        },
+        {
+          "feature": "Log Ret Lag 30",
+          "score": 1125.5047
+        },
+        {
+          "feature": "Arr Lag 90",
+          "score": 1106.3368
+        },
+        {
+          "feature": "medium-term supply arrival trend",
+          "score": 1097.1657
+        },
+        {
+          "feature": "seasonal/cyclical price pattern",
+          "score": 1095.5409
+        }
+      ]
+    },
+    "9": {
+      "text": "Maize prices are forecast to fall by 100.0% from Rs.1,972 to Rs.1/quintal over the next three months (model accuracy: 1.7% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Currently in the maize sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,465/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **Roll Cv 30**, and **Roll Cv 14** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.115/quintal (+4.9%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 966.8951
+        },
+        {
+          "feature": "Roll Cv 30",
+          "score": 601.6387
+        },
+        {
+          "feature": "Roll Cv 14",
+          "score": 591.072
+        },
+        {
+          "feature": "Roll Cv 7",
+          "score": 559.5684
+        },
+        {
+          "feature": "Vol Log Ret 7",
+          "score": 552.3857
+        },
+        {
+          "feature": "Log Ret Lag 14",
+          "score": 523.0465
+        },
+        {
+          "feature": "Log Ret Lag 30",
+          "score": 514.7619
+        },
+        {
+          "feature": "Arr Lag 60",
+          "score": 499.7124
+        }
+      ]
+    },
+    "10": {
+      "text": "Maize prices are forecast to fall by 100.0% from Rs.1,972 to Rs.1/quintal over the next three months (model accuracy: 1.8% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Currently in the maize sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,465/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **price premium/discount vs. government MSP**, and **Roll Cv 14** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.115/quintal (+4.9%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 2085.333
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 1526.749
+        },
+        {
+          "feature": "Roll Cv 14",
+          "score": 1070.0304
+        },
+        {
+          "feature": "short-term supply arrival trend",
+          "score": 1064.4648
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 1026.3538
+        },
+        {
+          "feature": "Log Ret Lag 30",
+          "score": 987.8065
+        },
+        {
+          "feature": "Arr Lag 60",
+          "score": 950.7025
+        },
+        {
+          "feature": "Market Count Roll7",
+          "score": 941.7743
+        }
+      ]
+    },
+    "30": {
+      "text": "Maize prices are forecast to fall by 100.0% from Rs.1,972 to Rs.1/quintal over the next month (model accuracy: 1.9% error), driven primarily by medium-term supply-demand balance and seasonal patterns. Currently in the maize sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,465/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **price premium/discount vs. government MSP**, and **long-term annual price trend** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 30-day outlook is shaped by the pre-kharif procurement cycle and government release of buffer stocks - both factors have been incorporated in the LightGBM model's feature set.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 2047.4879
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 1528.674
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 1268.6506
+        },
+        {
+          "feature": "Roll Cv 90",
+          "score": 818.4927
+        },
+        {
+          "feature": "Vol Log Ret 60",
+          "score": 798.7034
+        },
+        {
+          "feature": "Momentum 30 90",
+          "score": 779.8301
+        },
+        {
+          "feature": "Spread Maize Paddy",
+          "score": 758.5289
+        },
+        {
+          "feature": "Log Ret Lag 30",
+          "score": 757.2114
+        }
+      ]
+    },
+    "90": {
+      "text": "Maize prices are forecast to fall by 100.0% from Rs.1,972 to Rs.1/quintal over the next three months (model accuracy: 1.8% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. Currently in the maize sowing window (June, July), market supply is thinning as the previous harvest stock depletes - this seasonal tightening supports the downward price trajectory. With prices near or below the MSP of Rs.2,465/quintal, government procurement is expected to intensify, providing strong price support and limiting further downside in the coming weeks. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **price premium/discount vs. government MSP**, and **Market Count Lag1** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.115/quintal (+4.9%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 7127.4404
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 4591.5069
+        },
+        {
+          "feature": "Market Count Lag1",
+          "score": 4132.2318
+        },
+        {
+          "feature": "Log Ret Lag 7",
+          "score": 3502.9336
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 3413.7814
+        },
+        {
+          "feature": "Log Ret Lag 30",
+          "score": 3218.6632
+        },
+        {
+          "feature": "Arr Lag 90",
+          "score": 3135.4441
+        },
+        {
+          "feature": "Log Ret Lag 14",
+          "score": 3051.1204
+        }
+      ]
+    }
+  },
+  "Mustard": {
+    "6": {
+      "text": "Mustard prices are forecast to fall by 100.0% from Rs.6,999 to Rs.1/quintal over the next three months (model accuracy: 1.9% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. With 3 months until the next mustard harvest, the market is in a lean-supply inter-seasonal phase where prices typically remain under pressure as old-crop stocks diminish and fresh arrivals are limited. Trading at a 13% premium to the 2026 MSP of Rs.6,200/quintal, prices reflect normalizing open-market sentiment while the MSP provides a comfortable downside buffer. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **Vol Log Ret 14**, and **Roll Cv 7** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.250/quintal (+4.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 1968.844
+        },
+        {
+          "feature": "Vol Log Ret 14",
+          "score": 1210.2468
+        },
+        {
+          "feature": "Roll Cv 7",
+          "score": 1125.42
+        },
+        {
+          "feature": "30-day price volatility",
+          "score": 1097.3552
+        },
+        {
+          "feature": "Vol Log Ret 7",
+          "score": 1051.0834
+        },
+        {
+          "feature": "Roll Cv 14",
+          "score": 1033.7881
+        },
+        {
+          "feature": "Vol Log Ret 60",
+          "score": 914.5997
+        },
+        {
+          "feature": "Log Ret Lag 7",
+          "score": 805.1642
+        }
+      ]
+    },
+    "7": {
+      "text": "Mustard prices are forecast to fall by 100.0% from Rs.6,999 to Rs.1/quintal over the next week (model accuracy: 1.9% error), driven primarily by short-term momentum and recent market activity. With 3 months until the next mustard harvest, the market is in a lean-supply inter-seasonal phase where prices typically remain under pressure as old-crop stocks diminish and fresh arrivals are limited. Trading at a 13% premium to the 2026 MSP of Rs.6,200/quintal, prices reflect normalizing open-market sentiment while the MSP provides a comfortable downside buffer. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **price premium/discount vs. government MSP**, and **seasonal/cyclical price pattern** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. Short-term price action (7-day) is primarily driven by day-to-day mandi arrivals, trader sentiment, and weather disruptions to transport - the 1.9% average forecast error reflects the inherent noise in daily market microstructure.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 1404.4082
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 838.0588
+        },
+        {
+          "feature": "seasonal/cyclical price pattern",
+          "score": 734.1254
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 650.8602
+        },
+        {
+          "feature": "Roll Cv 90",
+          "score": 622.4776
+        },
+        {
+          "feature": "Roll Cv 60",
+          "score": 598.3845
+        },
+        {
+          "feature": "Vol Log Ret 90",
+          "score": 570.8079
+        },
+        {
+          "feature": "Vol Log Ret 60",
+          "score": 554.7439
+        }
+      ]
+    },
+    "8": {
+      "text": "Mustard prices are forecast to fall by 100.0% from Rs.6,999 to Rs.1/quintal over the next three months (model accuracy: 2.0% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. With 3 months until the next mustard harvest, the market is in a lean-supply inter-seasonal phase where prices typically remain under pressure as old-crop stocks diminish and fresh arrivals are limited. Trading at a 13% premium to the 2026 MSP of Rs.6,200/quintal, prices reflect normalizing open-market sentiment while the MSP provides a comfortable downside buffer. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **Vol Log Ret 60**, and **long-term annual price trend** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.250/quintal (+4.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 323.8651
+        },
+        {
+          "feature": "Vol Log Ret 60",
+          "score": 140.4855
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 138.5588
+        },
+        {
+          "feature": "Vol Log Ret 90",
+          "score": 127.4317
+        },
+        {
+          "feature": "Roll Cv 60",
+          "score": 117.8942
+        },
+        {
+          "feature": "30-day price volatility",
+          "score": 114.9799
+        },
+        {
+          "feature": "Vol Log Ret 14",
+          "score": 112.0916
+        },
+        {
+          "feature": "Roll Cv 90",
+          "score": 107.0416
+        }
+      ]
+    },
+    "9": {
+      "text": "Mustard prices are forecast to fall by 100.0% from Rs.6,999 to Rs.1/quintal over the next three months (model accuracy: 1.9% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. With 3 months until the next mustard harvest, the market is in a lean-supply inter-seasonal phase where prices typically remain under pressure as old-crop stocks diminish and fresh arrivals are limited. Trading at a 13% premium to the 2026 MSP of Rs.6,200/quintal, prices reflect normalizing open-market sentiment while the MSP provides a comfortable downside buffer. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **long-term annual price trend**, and **Vol Log Ret 14** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.250/quintal (+4.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 3841.2406
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 1813.37
+        },
+        {
+          "feature": "Vol Log Ret 14",
+          "score": 1802.3014
+        },
+        {
+          "feature": "Vol Log Ret 60",
+          "score": 1789.6504
+        },
+        {
+          "feature": "30-day price volatility",
+          "score": 1753.8974
+        },
+        {
+          "feature": "Roll Cv 14",
+          "score": 1590.0405
+        },
+        {
+          "feature": "Vol Log Ret 90",
+          "score": 1550.6511
+        },
+        {
+          "feature": "Roll Cv 7",
+          "score": 1516.9893
+        }
+      ]
+    },
+    "10": {
+      "text": "Mustard prices are forecast to fall by 100.0% from Rs.6,999 to Rs.1/quintal over the next three months (model accuracy: 1.8% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. With 3 months until the next mustard harvest, the market is in a lean-supply inter-seasonal phase where prices typically remain under pressure as old-crop stocks diminish and fresh arrivals are limited. Trading at a 13% premium to the 2026 MSP of Rs.6,200/quintal, prices reflect normalizing open-market sentiment while the MSP provides a comfortable downside buffer. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **Vol Log Ret 60**, and **Vol Log Ret 14** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.250/quintal (+4.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 174.9314
+        },
+        {
+          "feature": "Vol Log Ret 60",
+          "score": 128.0429
+        },
+        {
+          "feature": "Vol Log Ret 14",
+          "score": 109.2599
+        },
+        {
+          "feature": "30-day price volatility",
+          "score": 108.7786
+        },
+        {
+          "feature": "Roll Cv 14",
+          "score": 104.2751
+        },
+        {
+          "feature": "Roll Cv 7",
+          "score": 95.3607
+        },
+        {
+          "feature": "Vol Log Ret 90",
+          "score": 91.7692
+        },
+        {
+          "feature": "Roll Cv 30",
+          "score": 89.3786
+        }
+      ]
+    },
+    "30": {
+      "text": "Mustard prices are forecast to fall by 100.0% from Rs.6,999 to Rs.1/quintal over the next month (model accuracy: 2.0% error), driven primarily by medium-term supply-demand balance and seasonal patterns. With 3 months until the next mustard harvest, the market is in a lean-supply inter-seasonal phase where prices typically remain under pressure as old-crop stocks diminish and fresh arrivals are limited. Trading at a 13% premium to the 2026 MSP of Rs.6,200/quintal, prices reflect normalizing open-market sentiment while the MSP provides a comfortable downside buffer. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **long-term annual price trend**, and **price premium/discount vs. government MSP** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 30-day outlook is shaped by the pre-kharif procurement cycle and government release of buffer stocks - both factors have been incorporated in the LightGBM model's feature set.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 1273.1786
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 819.7517
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 723.667
+        },
+        {
+          "feature": "Vol Log Ret 60",
+          "score": 712.7468
+        },
+        {
+          "feature": "Vol Log Ret 90",
+          "score": 607.5857
+        },
+        {
+          "feature": "Roll Cv 90",
+          "score": 541.166
+        },
+        {
+          "feature": "Roll Cv 30",
+          "score": 539.3319
+        },
+        {
+          "feature": "Roll Cv 60",
+          "score": 499.4716
+        }
+      ]
+    },
+    "90": {
+      "text": "Mustard prices are forecast to fall by 100.0% from Rs.6,999 to Rs.1/quintal over the next three months (model accuracy: 1.8% error), driven primarily by seasonal harvest cycle, MSP floor support, and structural demand trends. With 3 months until the next mustard harvest, the market is in a lean-supply inter-seasonal phase where prices typically remain under pressure as old-crop stocks diminish and fresh arrivals are limited. Trading at a 13% premium to the 2026 MSP of Rs.6,200/quintal, prices reflect normalizing open-market sentiment while the MSP provides a comfortable downside buffer. The ensemble model's highest-weighted predictors are: **price-to-MSP ratio (floor support)**, **price premium/discount vs. government MSP**, and **long-term annual price trend** - together capturing the bearish price signal in historical patterns across 25+ years of mandi data. The 90-day seasonal forecast incorporates annual price cycles, monsoon-linked Kharif sowing sentiment, and the year-on-year MSP increase of Rs.250/quintal (+4.2%) which anchors longer-term price expectations.",
+      "source": "rule_based",
+      "key_drivers": [
+        {
+          "feature": "price-to-MSP ratio (floor support)",
+          "score": 450.1811
+        },
+        {
+          "feature": "price premium/discount vs. government MSP",
+          "score": 307.0116
+        },
+        {
+          "feature": "long-term annual price trend",
+          "score": 256.7933
+        },
+        {
+          "feature": "Spread Mustard Paddy",
+          "score": 193.1361
+        },
+        {
+          "feature": "Roll Cv 60",
+          "score": 190.9024
+        },
+        {
+          "feature": "Vol Log Ret 90",
+          "score": 189.6823
+        },
+        {
+          "feature": "Arr Lag 90",
+          "score": 177.6771
+        },
+        {
+          "feature": "current price vs. annual average",
+          "score": 173.7328
+        }
+      ]
+    }
+  }
+}

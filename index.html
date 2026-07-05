@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India Grain Price Intelligence — AI-Powered Forecasting Dashboard</title>
+  <meta name="description" content="Real-time AI forecasting of India's major grain prices (Wheat, Rice, Maize, Mustard) for 7, 30, and 90-day horizons with ML ensemble models and natural language reasoning." />
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js for interactive charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <!-- chartjs-adapter-date-fns for time axis -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- Loading overlay -->
+<div id="loading-overlay">
+  <div class="loader-logo">🌾</div>
+  <div class="loader-title">Loading Intelligence…</div>
+  <div class="loader-sub">Preparing forecast data for India's grain markets</div>
+  <div class="loader-bar-track">
+    <div class="loader-bar-fill"></div>
+  </div>
+</div>
+
+<div class="stars-bg"></div>
+
+<div class="wrapper">
+
+  <!-- ─── HEADER ──────────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand">
+        <div class="brand-logo">🌾</div>
+        <div class="brand-text">
+          <h1>India Grain Price Intelligence</h1>
+          <div class="subtitle">AI-Powered 7 · 30 · 90 Day Forecasting Engine</div>
+        </div>
+      </div>
+      <div class="header-meta">
+        <div class="live-badge">
+          <div class="live-dot"></div>
+          LIVE FORECAST
+        </div>
+        <div class="update-time" id="update-time">Forecast as of: 5 Jul 2026</div>
+      </div>
+    </div>
+
+
+
+    <!-- Grain selector tabs -->
+    <div class="grain-tabs-wrapper" id="grain-tabs">
+      <!-- Populated by JS -->
+    </div>
+  </header>
+
+  <!-- ─── CURRENT PRICE BANNER ──────────────────────────────────────────── -->
+  <div class="current-price-banner" id="price-banner" style="--grain-color: var(--wheat)">
+    <div class="price-banner-left">
+      <div class="grain-icon-large" id="banner-icon">🌾</div>
+      <div class="price-banner-info">
+        <h2 id="banner-grain-name">Wheat</h2>
+        <div class="current-price-display">
+          <div class="current-price-value" id="banner-price">₹0</div>
+          <div class="current-price-unit" id="banner-unit">/Quintal</div>
+        </div>
+      </div>
+    </div>
+    <div class="price-banner-meta">
+      <div class="data-date">Last Data: <span id="banner-last-date">—</span></div>
+      <div class="data-date" style="margin-top:4px">Forecast to: <span id="banner-forecast-to">Jul 5, 2026</span></div>
+    </div>
+  </div>
+
+  <!-- ─── FORECAST CARDS ──────────────────────────────────────────────── -->
+  <div class="forecast-cards" id="forecast-cards">
+    <!-- Populated by JS -->
+  </div>
+
+  <!-- ─── PRICE CHART ─────────────────────────────────────────────────── -->
+  <section class="chart-section fade-up">
+    <div class="section-header">
+      <div class="section-title">
+        <div class="icon">📈</div>
+        Price History & AI Forecast
+      </div>
+      <div class="chart-legend" id="chart-legend">
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#60A5FA"></div>
+          Historical (Jun 2026)
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot dashed" style="color: var(--wheat)"></div>
+          AI Forecast
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:rgba(255,255,255,0.15); border-radius:2px; width:16px; height:8px"></div>
+          Confidence Band
+        </div>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="priceChart"></canvas>
+    </div>
+  </section>
+
+  <!-- ─── JULY 1-5 ACTUAL VS FORECAST TABLE ────────────────────────────── -->
+  <section class="chart-section fade-up" style="margin-top: 24px;">
+    <div class="section-header">
+      <div class="section-title">
+        <div class="icon">📋</div>
+        July 1-5: Forecast vs Actual Comparison
+      </div>
+    </div>
+    <div class="table-container" style="overflow-x: auto; padding: 16px;">
+      <table id="julyTable" class="july-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Actual Price</th>
+            <th>Daily Forecast</th>
+            <th>Difference</th>
+          </tr>
+        </thead>
+        <tbody id="julyTableBody">
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ─── BOTTOM GRID ─────────────────────────────────────────────────── -->
+  <div class="bottom-grid">
+
+    <!-- Reasoning panel -->
+    <section class="reasoning-panel fade-up">
+      <div class="section-header" style="margin-bottom:16px">
+        <div class="section-title">
+          <div class="icon">🤖</div>
+          AI Price Reasoning
+        </div>
+        <div class="reasoning-source-badge" id="reasoning-badge">Gemini AI</div>
+      </div>
+
+      <!-- Horizon selector tabs -->
+      <div class="horizon-tabs" id="reasoning-horizon-tabs">
+        <button class="horizon-tab active" data-horizon="7"  onclick="selectReasoningHorizon(7)">7-Day</button>
+        <button class="horizon-tab"        data-horizon="30" onclick="selectReasoningHorizon(30)">30-Day</button>
+        <button class="horizon-tab"        data-horizon="90" onclick="selectReasoningHorizon(90)">90-Day</button>
+      </div>
+
+      <!-- Reasoning text -->
+      <div class="reasoning-text-box">
+        <div id="reasoning-text" class="reasoning-text">
+          Loading AI reasoning…
+        </div>
+      </div>
+
+      <!-- Feature importance -->
+      <div class="feature-importance">
+        <div class="fi-title">Top Predictive Signals</div>
+        <div id="feature-importance-list">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics panel -->
+    <section class="metrics-panel fade-up">
+      <div class="section-header" style="margin-bottom:20px">
+        <div class="section-title">
+          <div class="icon">📊</div>
+          Model Performance
+        </div>
+      </div>
+
+      <!-- Per-horizon metrics -->
+      <div id="metrics-cards">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- Ensemble weights -->
+      <div class="model-breakdown" id="model-breakdown">
+        <div class="breakdown-title">Ensemble Composition</div>
+        <div id="breakdown-items">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /bottom-grid -->
+
+  <!-- ─── FOOTER ──────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-note">
+      <strong>India Grain Price Intelligence</strong> · Predictions are AI-generated estimates for informational purposes only.
+      Actual prices may vary based on local market conditions.
+    </div>
+    <div>Data: AGMARKNET · Model: v36 Ensemble · Built with LightGBM + Gemini AI</div>
+  </footer>
+
+</div><!-- /wrapper -->
+
+<script src="app.js?v=2"></script>
+</body>
+</html>
