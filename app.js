@@ -615,7 +615,7 @@ function renderReasoning() {
         <div class="fi-bar-track" style="--grain-color:${color}">
           <div class="fi-bar-fill" style="--grain-color:${color}"></div>
         </div>
-        <div class="fi-score">${(d.score * 100).toFixed(1)}%</div>
+        <div class="fi-score">${pct}%</div>
       `;
       fiList.appendChild(item);
 
