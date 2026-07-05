@@ -781,9 +781,37 @@
         "price_low": 6650.0,
         "price_high": 7222.5,
         "is_highlight": false
+      },
+      {
+        "date": "2026-07-01",
+        "price": 7103.0,
+        "price_low": 5684.24,
+        "price_high": 10100.0,
+        "is_highlight": true
+      },
+      {
+        "date": "2026-07-02",
+        "price": 7137.5,
+        "price_low": 5000.0,
+        "price_high": 17333.33,
+        "is_highlight": true
+      },
+      {
+        "date": "2026-07-03",
+        "price": 7040.5,
+        "price_low": 5255.0,
+        "price_high": 19200.0,
+        "is_highlight": true
+      },
+      {
+        "date": "2026-07-04",
+        "price": 7000.0,
+        "price_low": 5000.0,
+        "price_high": 13600.0,
+        "is_highlight": true
       }
     ],
-    "highlight_count": 0,
+    "highlight_count": 4,
     "latest_date": "2026-06-25"
   }
 }
